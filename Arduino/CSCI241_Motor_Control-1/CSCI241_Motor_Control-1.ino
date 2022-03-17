@@ -27,6 +27,10 @@ void loop ()
 
   CycleMotor(MotorPin, 10000, 750, 250);
 
+  // 1000 cycles per second at 50% on for 10 seconds.
+
+  CycleMotor(MotorPin, 10000, 500, 500);  
+
   // Make sure motor is stopped.
 
   SetMotorState(MotorPin, MotorOffState);
