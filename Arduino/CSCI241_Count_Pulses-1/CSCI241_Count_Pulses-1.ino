@@ -1,3 +1,4 @@
+//Authors: Alexander Antoun, Prof. Wayne Wall
 #include "CSCI_GPIO.h"
 #include "CSCI_LED.h"
 #include "CSCI_PushButton.h"
