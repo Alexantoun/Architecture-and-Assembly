@@ -27,12 +27,16 @@ void setup() {
 }
 
 void loop() {
-    if(GetGPIOInputState(inPin)!= lowToHigh){
+    if(GetGPIOInputState(inPin)!= lowToHigh)
+    {
       if(lowToHigh == LOW)
+      {
         pulseCount++;
+        SetLEDByteState(static_cast<uint8_t>(pulseCount), LEDArray, LedOnState);  
+      }
       lowToHigh = !lowToHigh;
     }
-    SetLEDByteState(static_cast<uint8_t>(pulseCount), LEDArray, LedOnState);  
+    
 
     if(IsButtonPressed(buttonA))
     {
